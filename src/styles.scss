@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**
+ * reset styles
+ */
+ * {
+  /** 仮のSPの大きさ、PCデザイン作成時にレスポンシブにする */
+  // width: 430px;
+  // height: 5048px;
+
+  margin: 0;
+  padding: 0;
+}

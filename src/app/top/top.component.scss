@@ -1,0 +1,149 @@
+/**
+ * TOP
+ */
+
+// SP画面以外の場合は修正必須
+.firstview-image {
+  position: relative;
+  width: 698px;
+  height: 932px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: gray;
+  margin-bottom: 87px;
+}
+
+/* スクリーンサイズが430px以下の場合に適用 */
+@media screen and (max-width: 431px) {
+  .firstview-image {
+    width: 430px;
+    height: 100vh;
+
+    // スライドショー
+    .image-01, .image-02, .image-03{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      background-blend-mode: lighten;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .image-01{
+      background-image: url('../../assets/images/firstview_01.png');
+      animation: slide-animation-01 24s infinite;
+    }
+    .image-02{
+      background-image: url('../../assets/images/firstview_02.jpg');
+      animation: slide-animation-02 24s infinite;
+    }
+    .image-03{
+      background-image: url('../../assets/images/firstview_03.jpg');
+      animation: slide-animation-03 24s infinite;
+    }
+
+    @keyframes slide-animation-01 {
+      0% {opacity: 1; transform: scale(1.0);}
+      30% {opacity: 1;}
+      40% {opacity: 0; transform: scale(1.15);}
+      90% {opacity: 0}
+      100% {opacity: 1; transform: scale(1.0);}
+    }
+    @keyframes slide-animation-02 {
+      0% {opacity: 0;}
+      30% {opacity: 0; transform: scale(1.1);}
+      40% {opacity: 1;}
+      60% {opacity: 1;}
+      70% {opacity: 0; transform: scale(1.0);}
+      100% {opacity: 0;}
+    }
+    @keyframes slide-animation-03 {
+      0% {opacity: 0;}
+      60% {opacity: 0;  transform: scale(1.0);}
+      70% {opacity: 1;}
+      90% {opacity: 1;}
+      100% {opacity: 0; transform: scale(1.1);}
+    }
+
+    // ロゴマーク
+    .image-logo {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 285px;
+      height: 244px;
+      background-image: url('../../assets/images/logo_positive.png');
+    }
+
+    // スライドアニメーションアイコン
+    .image-fv-icon {
+      position: absolute;
+      z-index: 10;
+      top: 802px;
+      right: 16px;
+      // bottom: 64px;
+      width: 23px;
+      height: 75px;
+      filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.40));
+      background-image: url('../../assets/images/firstview_animation_icon.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  // スクロールダウンgif
+  .image-scroll-down {
+    // 下記だとなぜか表示されない
+    // position: absolute;
+    // z-index: 10;
+    // top: 859px;
+    // right: 135px;
+    // width: 160px;
+    // height: 160px;
+    // background-image: url('../../assets/images/scroll_down.gif');
+    img {
+      position: absolute;
+      top: 859px;
+      right: 135px;
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  .top-contents-introduction {
+    margin-top: 15px;
+
+    .pickup-products {
+      .product-introduction {
+        display: flex;
+
+        .product-image-01 {
+          width: 402px;
+          height: 251px;
+        }
+
+        .product-title {
+          // width: 146px;
+          // height: 22px;
+          // -webkit-writing-mode: vertical-rl;
+          -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+          // transform: rotate(90deg);
+
+          color: #14215A;
+          // 適用されない
+          font-family: 'Crimson Text';
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+} 
