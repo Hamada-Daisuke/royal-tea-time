@@ -116,15 +116,29 @@
   }
 
   .top-contents-introduction {
-    margin-top: 15px;
+    margin-top: 111px;
 
     .pickup-products {
+      &.top-pickup {
+        // TODO: ボーダーの長さを変更する
+        border-top: #14215A dashed 3px;
+
+        .drop-image {
+          // width: 11px;
+          // height: 50px;
+          text-align: center;
+          margin-bottom: 28px;
+        }
+      }
+
       .product-introduction {
         display: flex;
+        margin-top: 3px;
 
-        .product-image-01 {
+        .product-image {
           width: 402px;
           height: 251px;
+          box-shadow: 0 5px 10px 1px #a1a7c0;
         }
 
         .product-title {
@@ -133,16 +147,87 @@
           // -webkit-writing-mode: vertical-rl;
           -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-          // transform: rotate(90deg);
-
           color: #14215A;
-          // 適用されない
-          font-family: 'Crimson Text';
+          // font-family: 'Crimson Text';
+          font-family: 游明朝;
           font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+          filter: drop-shadow(0 2px 1px #595d6e);
         }
+      }
+    }
+
+    .introduction-contents {
+      padding-bottom: 27px;
+
+      &.intro-content-center {
+        text-align: center;
+
+        .introduction-text {
+          display: inline-block;
+          text-align: left;
+        }
+
+        .product-introduction {
+          display: block;
+
+          .product-title {
+            writing-mode: horizontal-tb;
+          }
+        }
+      }
+
+      &.intro-content-right {
+        text-align: right;
+
+        .brand-introduction {
+          padding-right: 17px;
+        }
+
+        .product-title {
+          text-align: left;
+        }
+      }
+
+      .brand-introduction {
+        padding-top: 55px;
+        padding-left: 16px;
+
+        .introduction-title {
+          color: #14215A;
+          text-shadow: 0px 3px 3px rgba(20, 33, 90, 0.25);
+          font-family: 'BIZ UDMincho';
+          font-size: 32px;
+          font-weight: 400;
+        }
+
+        .introduction-text {
+          color: #000;
+          // font-family: 'Crimson Text', 'BIZ UDMincho';
+          font-family: 游明朝, 'BIZ UDMincho';
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 40px;
+
+          margin: 23px 0;
+        }
+      }
+    }
+
+    .products-list-button {
+      width: 241px;
+      height: 48px;
+      background-color: #4B6C55;
+      margin: 0 auto;
+      margin-top: 38px;
+      text-align: center;
+      box-shadow: 0 5px 10px 1px #a1a7c0;
+
+      .products-list-button-color {
+        color: #ffffff;
+        // font-family: 'Crimson Text';
+        font-family: 游明朝;
+        font-size: 20px;
+        padding-top: 8px;
       }
     }
   }
