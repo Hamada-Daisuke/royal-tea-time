@@ -23,8 +23,16 @@
 
   <div class="navigation-menu" (click)="showMenuFlg = !showMenuFlg"
     ><a class="header-nav-link" href="javascript:void(0);"
-      ><span [class.menu-line-dark-blue]="showMenuFlg" class="menu-line nav-menu-line-01"></span
-      ><span [class.menu-line-dark-blue]="showMenuFlg" class="menu-line nav-menu-line-02"></span
+      ><span
+        class="menu-line nav-menu-line-01"
+        [class.nav-menu-line-01-change-position]="showMenuFlg"
+        [class.menu-line-dark-blue]="showMenuFlg"
+      ></span
+      ><span
+        class="menu-line nav-menu-line-02"
+        [class.nav-menu-line-02-change-position]="showMenuFlg"
+        [class.menu-line-dark-blue]="showMenuFlg"
+      ></span
       ><p [class.change-color]="showMenuFlg">MENU</p
     ></a
   ></div>

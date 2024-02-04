@@ -66,10 +66,24 @@
       
       &.nav-menu-line-01 {
         top: 0;
+        transition: transform 0.3s ease-out;
+
+        &-change-position {
+          width: 28px;
+          transform: translate(2px, 8px) rotate(45deg);
+          transition: transform 0.3s ease-out;
+        }
       }
 
       &.nav-menu-line-02 {
         top: 10px;
+        transition: transform 0.3s ease-out;
+
+        &-change-position {
+          width: 28px;
+          transform: translate(2px, -2px) rotate(-45deg);
+          transition: transform 0.3s ease-out;
+        }
       }
     }
 
