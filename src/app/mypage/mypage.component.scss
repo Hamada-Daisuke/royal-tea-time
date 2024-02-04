@@ -1,0 +1,124 @@
+@import '../../assets/scss/common';
+
+/**
+ * Mypage
+ */
+.mypage-content-wrapper {
+  margin-bottom: 50px;
+
+  h1 {
+    color: $col-dark-blue;
+    font-size: 35px;
+    font-family: $font-english;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+  
+  .mypage-content {
+    border-top: #c0d6ca solid 2px;
+    margin: 0 auto;
+    width: 390px;
+
+    &:last-child {
+      border-bottom: #c0d6ca solid 2px;
+    }
+    
+    .content-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+  
+      p {
+        color: $col-dark-blue;
+        font-size: 15px;
+      }
+  
+      .control-btn-content {
+        width: 24.8px;
+  
+        .control-btn {
+          border-top: #c0d6ca solid 2px;
+          border-right: #c0d6ca solid 2px;
+          text-align: center;
+          width: 10px;
+          height: 10px;
+          margin: auto;
+    
+          &.up-arrow-btn {
+            transform: rotate(135deg);
+          }
+    
+          &.down-arrow-btn {
+            transform: translateY(8px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  
+    .content-body {
+      margin: 0 auto;
+      width: 275px;
+
+      &.product-body {
+        width: 335px;
+      }
+
+      .content-item {
+        list-style: none;
+        
+        /* アカウント情報 */
+        .account-items {
+          font-size: 15px;
+          padding-bottom: 20px;
+    
+          &:first-child {
+            padding-top: 10px;
+          }
+        }
+
+        /* お気に入り */
+        .product-items {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 0;
+
+          .product-text {
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: auto;
+          }
+          
+          .icon-image {
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .content-btn {
+        background-color: $col-green;
+        box-shadow: 0 5px 10px 1px #a1a7c0;
+        text-align: center;
+        margin-bottom: 20px;
+        height: 40px;
+
+        &.all-add {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+
+        p {
+          color: $col-white;
+          font-size: 15px;
+          line-height: 40px;
+        }
+
+        .all-btn-text {
+          margin-left: 10px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}

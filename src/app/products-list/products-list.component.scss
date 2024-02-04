@@ -1,0 +1,44 @@
+@import '../../assets/scss/common';
+
+/**
+ * Top
+ */
+.products-list-title {
+  color: $col-dark-blue;
+  font-size: 36px;
+  font-family: $font-english;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.pagenation-content {
+  margin: 40px 67px;
+  text-align: center;
+
+  .pagenation-total-text {
+    font-family: $font-japanese;
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .pagenation-item {
+    display: flex;
+    justify-content: center;
+
+    .pagenation-arrow {
+      width: 42px;
+      height: 42px;
+      background-color: $col-green;
+
+      img {
+        padding: 14px 0;
+      }
+    }
+
+    .pagelist-text {
+      font-family: $font-japanese;
+      font-size: 15px;
+      padding: 11px 68px;
+    }
+  }
+}

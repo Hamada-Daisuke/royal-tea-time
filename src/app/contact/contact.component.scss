@@ -1,0 +1,59 @@
+@import '../../assets/scss/common';
+
+/**
+ * Contact
+ */
+h1 {
+  color: $col-dark-blue;
+  font-size: 35px;
+  font-family: $font-english;
+  text-align: center;
+}
+
+.contact-form {
+  padding: 0 20px;
+
+  .form-contents {
+    margin-bottom: 8px;
+
+    .form-contents-title {
+      color: $col-dark-blue;
+      font-family: $font-english;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    .form-contents-input {
+      height: 40px;
+      width: 390px;
+      font-size: 20px;
+      text-indent: 0.5em;
+    }
+
+    .form-contents-textarea {
+      border: 2px solid $col-green;
+      outline: none;
+      height: 195px;
+      width: 370px;
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+}
+
+.form-contents-btn {
+  margin: 0 auto;
+  margin: 35px auto;
+  height: 60px;
+  width: 146px;
+  background-color: $col-green;
+  text-align: center;
+  box-shadow: 0 5px 10px 1px #a1a7c0;
+
+  p {
+    color: $col-white;
+    font-family: $font-english;
+    font-size: 24px;
+    padding-top: 10px;
+  }
+}

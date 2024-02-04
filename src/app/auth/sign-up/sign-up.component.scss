@@ -1,0 +1,62 @@
+@import '../../../assets/scss/common';
+
+/**
+ * Auth Sign Up
+ */
+.auth-contents-wrapper {
+  background-image: url('../../../assets/images/signup_image.png');
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+
+  .logo-content {
+    padding-top: 127px;
+    padding-bottom: 50px;
+  }
+
+  .auth-form {
+    padding: 0 20px;
+
+    .form-contents {
+      margin-bottom: 10px;
+
+      .form-contents-title {
+        color: $col-dark-blue;
+        font-family: $font-english;
+        font-size: 24px;
+        text-align: left;
+      }
+
+      .form-contents-input {
+        height: 40px;
+        width: 390px;
+        font-size: 20px;
+        text-indent: 0.5em;
+      }
+    }
+  }
+
+  .form-contents-btn {
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 60px;
+    width: 146px;
+    background-color: $col-green;
+    text-align: center;
+    box-shadow: 0 5px 10px 1px #a1a7c0;
+
+    p {
+      color: $col-white;
+      font-family: $font-english;
+      font-size: 24px;
+      padding-top: 10px;
+    }
+  }
+
+  .auth-sign-up-content {
+    color: $col-dark-blue;
+    font-family: $font-english;
+    font-size: 24px;
+    margin: 23px 0;
+  }
+}

@@ -1,0 +1,55 @@
+<div (click)="toggle = !toggle" [class.page-wrapper-disable]="toggle" class="page-wrapper"></div>
+<div
+  class="sticky-cart-wrapper"
+  [@openModal]="toggle ? 'open' : 'close'"
+>
+  <div class="sticky-cart-modal">
+    <!-- ショッピングカートアイコン -->
+    <img
+      class="shopping-cart-icon"
+      src="../../../assets/images/sticky_cart.svg"
+      width="79px"
+      height="39px"
+      alt="shopping_cart_icon画像"
+      (click)="toggle = !toggle"
+    >
+
+    <div class="sticky-cart-contents">
+      <!-- ショッピングカートモーダル -->
+      <div class="sticky-cart-total-price">
+        <p class="total-price-text">合計<span class="price-number">5,800</span>円</p>
+        <p class="total-price-text">合計数<span class="price-number">2</span>個</p>
+      </div>
+      <div class="sticky-cart-product">
+        <a class="sticky-cart-link" href="#">
+          <img class="product-image" src="../../../assets/images/product_item_main.png" width="72px" height="72px" alt="product画像">
+          <div class="sticky-cart-product-text">
+            <p class="product-title">季節限定フレーバー</p>
+            <p class="product-price">3,800<span class="price-yen">円</span></p>
+          </div>
+          <a href="#"
+            ><img src="../../../assets/images/delete_icon.svg" width="20px" height="26px" alt="product画像"
+          ></a>
+        </a>
+      </div>
+      <div class="sticky-cart-product">
+        <a class="sticky-cart-link" href="#">
+          <img class="product-image" src="../../../assets/images/03_royal_tea_time.png" width="72px" height="72px" alt="product画像">
+          <div class="sticky-cart-product-text">
+            <p class="product-title">アールグレイ</p>
+            <p class="product-price">2,000<span class="price-yen">円</span></p>
+          </div>
+          <a href="#"
+            ><img src="../../../assets/images/delete_icon.svg" width="20px" height="26px" alt="product画像"
+          ></a>
+        </a>
+      </div>
+    
+      <div class="sticky-cart-payment">
+        <a href="#"
+          ><p class="payment-btn">購入</p
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

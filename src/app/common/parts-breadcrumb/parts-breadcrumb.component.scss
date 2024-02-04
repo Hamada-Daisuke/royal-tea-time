@@ -1,0 +1,15 @@
+@import '../../../assets/scss/common';
+
+/**
+ * Breadcrumb
+ */
+.breadcrumb-contents {
+  margin: 0 16px;
+  display: flex;
+  height: 24px;
+
+  .breadcrumb-text {
+    font-family: $font-english;
+    font-size: 15px;
+  }
+}

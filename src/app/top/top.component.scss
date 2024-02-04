@@ -1,5 +1,7 @@
+@import '../../assets/scss/common';
+
 /**
- * TOP
+ * Top
  */
 
 // SP画面以外の場合は修正必須
@@ -7,8 +9,6 @@
   position: relative;
   width: 698px;
   height: 932px;
-  flex-shrink: 0;
-  overflow: hidden;
   background-color: gray;
   margin-bottom: 87px;
 }
@@ -44,28 +44,28 @@
       animation: slide-animation-03 24s infinite;
     }
 
-    @keyframes slide-animation-01 {
-      0% {opacity: 1; transform: scale(1.0);}
-      30% {opacity: 1;}
-      40% {opacity: 0; transform: scale(1.15);}
-      90% {opacity: 0}
-      100% {opacity: 1; transform: scale(1.0);}
-    }
-    @keyframes slide-animation-02 {
-      0% {opacity: 0;}
-      30% {opacity: 0; transform: scale(1.1);}
-      40% {opacity: 1;}
-      60% {opacity: 1;}
-      70% {opacity: 0; transform: scale(1.0);}
-      100% {opacity: 0;}
-    }
-    @keyframes slide-animation-03 {
-      0% {opacity: 0;}
-      60% {opacity: 0;  transform: scale(1.0);}
-      70% {opacity: 1;}
-      90% {opacity: 1;}
-      100% {opacity: 0; transform: scale(1.1);}
-    }
+    // @keyframes slide-animation-01 {
+    //   0% {opacity: 1; transform: scale(1.0);}
+    //   30% {opacity: 1;}
+    //   40% {opacity: 0; transform: scale(1.15);}
+    //   90% {opacity: 0}
+    //   100% {opacity: 1; transform: scale(1.0);}
+    // }
+    // @keyframes slide-animation-02 {
+    //   0% {opacity: 0;}
+    //   30% {opacity: 0; transform: scale(1.1);}
+    //   40% {opacity: 1;}
+    //   60% {opacity: 1;}
+    //   70% {opacity: 0; transform: scale(1.0);}
+    //   100% {opacity: 0;}
+    // }
+    // @keyframes slide-animation-03 {
+    //   0% {opacity: 0;}
+    //   60% {opacity: 0;  transform: scale(1.0);}
+    //   70% {opacity: 1;}
+    //   90% {opacity: 1;}
+    //   100% {opacity: 0; transform: scale(1.1);}
+    // }
 
     // ロゴマーク
     .image-logo {
@@ -110,8 +110,6 @@
       position: absolute;
       top: 859px;
       right: 135px;
-      width: 160px;
-      height: 160px;
     }
   }
 
@@ -121,11 +119,9 @@
     .pickup-products {
       &.top-pickup {
         // TODO: ボーダーの長さを変更する
-        border-top: #14215A dashed 3px;
+        border-top: $col-dark-blue dashed 3px;
 
         .drop-image {
-          // width: 11px;
-          // height: 50px;
           text-align: center;
           margin-bottom: 28px;
         }
@@ -136,20 +132,34 @@
         margin-top: 3px;
 
         .product-image {
-          width: 402px;
-          height: 251px;
           box-shadow: 0 5px 10px 1px #a1a7c0;
+          background-image: url('../../assets/images/01_royal_tea_time.png');
+          height: 251px;
+          width: 402px;
+
+          &.product-02 {
+            background-image: url('../../assets/images/02_royal_tea_time.png');
+          }
+          &.product-03 {
+            background-image: url('../../assets/images/03_royal_tea_time.png');
+          }
+          &.product-04 {
+            background-image: url('../../assets/images/04_royal_tea_time.png');
+          }
+          &.product-05 {
+            background-image: url('../../assets/images/05_royal_tea_time.png');
+          }
+          &.product-06 {
+            background-image: url('../../assets/images/06_royal_tea_time.png');
+          }
         }
 
         .product-title {
-          // width: 146px;
-          // height: 22px;
-          // -webkit-writing-mode: vertical-rl;
+          -webkit-writing-mode: vertical-rl;
           -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-          color: #14215A;
-          // font-family: 'Crimson Text';
-          font-family: 游明朝;
+          color: $col-dark-blue;
+          font-family: $font-english;
           font-size: 20px;
           filter: drop-shadow(0 2px 1px #595d6e);
         }
@@ -193,17 +203,17 @@
         padding-left: 16px;
 
         .introduction-title {
-          color: #14215A;
+          color: $col-dark-blue;
           text-shadow: 0px 3px 3px rgba(20, 33, 90, 0.25);
-          font-family: 'BIZ UDMincho';
+          font-family: $font-japanese;
           font-size: 32px;
           font-weight: 400;
         }
 
         .introduction-text {
           color: #000;
-          // font-family: 'Crimson Text', 'BIZ UDMincho';
-          font-family: 游明朝, 'BIZ UDMincho';
+          // font-family: $font-english-2, $font-japanese;
+          font-family: $font-english, $font-japanese;
           font-size: 15px;
           font-weight: 500;
           line-height: 40px;
@@ -216,16 +226,16 @@
     .products-list-button {
       width: 241px;
       height: 48px;
-      background-color: #4B6C55;
+      background-color: $col-green;
       margin: 0 auto;
       margin-top: 38px;
       text-align: center;
       box-shadow: 0 5px 10px 1px #a1a7c0;
 
       .products-list-button-color {
-        color: #ffffff;
-        // font-family: 'Crimson Text';
-        font-family: 游明朝;
+        color: $col-white;
+        // font-family: $font-english-2;
+        font-family: $font-english;
         font-size: 20px;
         padding-top: 8px;
       }

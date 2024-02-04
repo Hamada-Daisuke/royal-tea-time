@@ -1,1 +1,35 @@
-<p>parts-header works!</p>
+<header [class.header-contents-change-color]="showMenuFlg" class="header-contents">
+  <ng-container *ngIf="!showMenuFlg; else hideContent">
+    <div class="bland-logo-type"
+      ><a class="header-logo-link" href="#"
+        ><img class="" src="../../../assets/images/logotype_negative.png" width="159px" height="42px" alt="logotype_negative画像"
+      ></a
+    ></div>
+  
+    <div class="person-icon">
+      <a class="header-person-link" href="#"
+        ><img class="" src="../../../assets/images/person_icon.svg" width="36px" height="36px" alt="person_iconのSVG"
+      ></a>
+    </div>
+  </ng-container>
+
+  <ng-template #hideContent>
+    <div id="change-position" class="bland-logo-type"
+      ><a class="header-logo-link" href="#"
+        ><img class="" src="../../../assets/images/logotype_positive.png" width="159px" height="42px" alt="logotype_negative画像"
+      ></a
+    ></div>
+  </ng-template>
+
+  <div class="navigation-menu" (click)="showMenuFlg = !showMenuFlg"
+    ><a class="header-nav-link" href="javascript:void(0);"
+      ><span [class.menu-line-dark-blue]="showMenuFlg" class="menu-line nav-menu-line-01"></span
+      ><span [class.menu-line-dark-blue]="showMenuFlg" class="menu-line nav-menu-line-02"></span
+      ><p [class.change-color]="showMenuFlg">MENU</p
+    ></a
+  ></div>
+</header>
+
+<royal-tea-time-parts-hamburger-menu
+  [showMenu]="showMenuFlg"
+></royal-tea-time-parts-hamburger-menu>

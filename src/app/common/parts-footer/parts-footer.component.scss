@@ -1,0 +1,79 @@
+@import '../../../assets/scss/common';
+
+/**
+ * Footer
+ */
+.footer-contents {
+  width: 430px;
+  height: 516px;
+  background-color: $col-dark-blue;
+  padding-top: 39px;
+
+  .sns-icons-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 33px;
+
+    .sns-icon {
+
+    }
+  }
+
+  .company-infomation-group {
+    display: flex;
+    justify-content: center;
+
+    .company-logo {
+      
+    }
+
+    .company-infomation {
+      width: 198px;
+      padding: 20px 0;
+      padding-left: 12px;
+
+      .company-infomation-text {
+        color: $col-white;
+        font-size: 12px;
+
+        &:nth-of-type(2) {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  .terms-of-service {
+    text-align: center;
+    margin: 44px 0;
+    color: $col-white;
+
+    a {
+      font-size: 12px;
+    }
+  }
+
+  .other-link {
+    text-align: center;
+    margin: 19px auto;
+
+    .other-link-text {
+      color: $col-white;
+
+      &.footer-link {
+        font-size: 12px;
+
+        &:nth-of-type(2) {
+          padding: 11px 0;
+        }
+      }
+
+      &.copy-right {
+        font-size: 9px;
+        padding: 18px 0;
+      }
+    }
+  }
+}

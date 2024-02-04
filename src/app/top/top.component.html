@@ -1,7 +1,7 @@
-<!-- <app-parts-header></app-parts-header> -->
-<!-- <p>top works!</p> -->
+<royal-tea-time-parts-header></royal-tea-time-parts-header>
 
 <article>
+  <!-- TODO: 画像すべてをPhotoshopでフィルターをかける -->
   <div class="firstview-image">
     <div class="image-01"></div>
     <div class="image-02"></div>
@@ -13,7 +13,7 @@
   </div>
 
   <div class="image-scroll-down">
-    <img src="../../assets/images/scroll_down.gif" alt="">
+    <img src="../../assets/images/scroll_down.gif" width="160px" height="160px" alt="スクロールダウンGIF">
   </div>
   <!-- <div class="image-scroll-down"></div> -->
 
@@ -21,24 +21,30 @@
   <section class="top-contents-introduction">
     <div class="pickup-products top-pickup">
       <div class="product-introduction">
-        <img class="product-image" src="../../assets/images/01_royal_tea_time.png" alt="01_royal_tea_time画像">
+        <div class="product-image product-01"></div>
         <p class="product-title">01 _ royal tea time</p>
       </div>
-      <div class="drop-image"><img src="../../assets/images/drop_image.svg" alt="drop_image画像"></div>
+      <div class="drop-image">
+        <img src="../../assets/images/drop_image.svg" width="11px" height="50px" alt="drop_image画像">
+      </div>
     </div>
     <div class="pickup-products top-pickup">
       <div class="product-introduction">
-        <img class="product-image" src="../../assets/images/02_royal_tea_time.png" alt="02_royal_tea_time画像">
+        <div class="product-image product-02"></div>
         <p class="product-title">02 _ royal tea time</p>
       </div>
-      <div class="drop-image"><img src="../../assets/images/drop_image.svg" alt="drop_image画像"></div>
+      <div class="drop-image">
+        <img src="../../assets/images/drop_image.svg" width="11px" height="50px" alt="drop_image画像">
+      </div>
     </div>
     <div class="pickup-products top-pickup">
       <div class="product-introduction">
-        <img class="product-image" src="../../assets/images/03_royal_tea_time.png" alt="03_royal_tea_time画像">
+        <div class="product-image product-03"></div>
         <p class="product-title">03 _ royal tea time</p>
       </div>
-      <div class="drop-image"><img src="../../assets/images/drop_image.svg" alt="drop_image画像"></div>
+      <div class="drop-image">
+        <img src="../../assets/images/drop_image.svg" width="11px" height="50px" alt="drop_image画像">
+      </div>
     </div>
 
     <div class="introduction-contents">
@@ -54,7 +60,7 @@
       </div>
       <div class="pickup-products">
         <div class="product-introduction">
-          <img class="product-image" src="../../assets/images/04_royal_tea_time.png" alt="04_royal_tea_time画像">
+          <div class="product-image product-04"></div>
           <p class="product-title">04 _ royal tea time</p>
         </div>
       </div>
@@ -74,7 +80,7 @@
       </div>
       <div class="pickup-products">
         <div class="product-introduction">
-          <img class="product-image" src="../../assets/images/05_royal_tea_time.png" alt="05_royal_tea_time画像">
+          <div class="product-image product-05"></div>
           <p class="product-title">05 _ royal tea time</p>
         </div>
       </div>
@@ -92,11 +98,13 @@
       <div class="pickup-products">
         <div class="product-introduction">
           <p class="product-title">06 _ royal tea time</p>
-          <img class="product-image" src="../../assets/images/06_royal_tea_time.png" alt="06_royal_tea_time画像">
+          <div class="product-image product-06"></div>
         </div>
       </div>
     </div>
 
+    <!-- TODO: ボタンのコンポーネント化検討 -->
+    <!-- <royal-tea-time-parts-button></royal-tea-time-parts-button> -->
     <div class="products-list-button">
       <p class="products-list-button-color">products list</p>
     </div>
@@ -114,5 +122,8 @@
   </section>
 </article>
 
-<!-- <app-parts-breadcrumbs></app-parts-breadcrumbs> -->
-<!-- <app-parts-footer></app-parts-footer> -->
+<royal-tea-time-parts-sticky-cart-btn></royal-tea-time-parts-sticky-cart-btn>
+
+<royal-tea-time-parts-breadcrumb [breadcrumb]="'top'"></royal-tea-time-parts-breadcrumb>
+
+<royal-tea-time-parts-footer></royal-tea-time-parts-footer>

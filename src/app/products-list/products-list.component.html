@@ -1,1 +1,30 @@
-<p>products-list works!</p>
+<royal-tea-time-parts-header></royal-tea-time-parts-header>
+
+<royal-tea-time-parts-cover-image
+  [img]="'../../../assets/images/products_list_cover.png'"
+></royal-tea-time-parts-cover-image>
+
+<royal-tea-time-parts-breadcrumb [breadcrumb]="'product'"></royal-tea-time-parts-breadcrumb>
+
+<section>
+  <h1 class="products-list-title">product list</h1>
+
+  <royal-tea-time-parts-products-item></royal-tea-time-parts-products-item>
+
+  <div class="pagenation-content">
+    <p class="pagenation-total-text">全36商品　12-24　表示</p>
+    <div class="pagenation-item">
+      <div class="pagenation-arrow">
+        <img src="../../assets/images/before_aroow.svg" width="13px" height="13px" alt="arrow画像">
+      </div>
+      <p class="pagelist-text">2ページ目</p>
+      <div class="pagenation-arrow">
+        <img src="../../assets/images/after_arrow.svg" width="13px" height="13px" alt="arrow画像">
+      </div>
+    </div>
+  </div>
+</section>
+
+<royal-tea-time-parts-sticky-cart-btn></royal-tea-time-parts-sticky-cart-btn>
+
+<royal-tea-time-parts-footer></royal-tea-time-parts-footer>

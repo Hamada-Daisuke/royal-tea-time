@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/scss/common';
 
 /**
  * reset styles
@@ -10,9 +11,23 @@
 
   margin: 0;
   padding: 0;
+  color: $col-black;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+input {
+  border: 2px solid $col-green;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
 }

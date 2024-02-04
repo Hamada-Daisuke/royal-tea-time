@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<royal-tea-time-parts-header></royal-tea-time-parts-header>
+
+<royal-tea-time-parts-cover-image
+  [img]="'../../../assets/images/contact_cover.png'"
+></royal-tea-time-parts-cover-image>
+
+<royal-tea-time-parts-breadcrumb [breadcrumb]="'contact'"></royal-tea-time-parts-breadcrumb>
+
+<section>
+  <h1>contact</h1>
+
+  <form class="contact-form" action="">
+    <div class="form-contents">
+      <p class="form-contents-title">name</p>
+      <input class="form-contents-input" type="text">
+    </div>
+    <div class="form-contents">
+      <p class="form-contents-title">tel</p>
+      <input class="form-contents-input" type="number">
+    </div>
+    <div class="form-contents">
+      <p class="form-contents-title">mail</p>
+      <input class="form-contents-input" type="email">
+    </div>
+    <div class="form-contents">
+      <p class="form-contents-title">message</p>
+      <textarea class="form-contents-textarea" name="" id="" cols="30" rows="10"></textarea>
+    </div>
+  </form>
+
+  <div class="form-contents-btn">
+    <a class="send-btn" href="#"
+      ><p>send</p
+    ></a>
+  </div>
+</section>
+
+<royal-tea-time-parts-footer></royal-tea-time-parts-footer>

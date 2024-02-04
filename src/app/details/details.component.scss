@@ -1,0 +1,182 @@
+@import '../../assets/scss/common';
+
+/**
+ * Details
+ */
+.details-content {
+  padding: 0 20px;
+  padding-top: 74px;
+
+  .detail-top {
+    padding-top: 10px;
+
+    .product-images {
+      margin-bottom: 38px;
+
+      .product-main-image {
+        object-fit: cover;
+      }
+  
+      .product-sub-images {
+        display: flex;
+        border-bottom: $col-dark-blue solid 3px;
+      }
+    }
+
+    .product-title {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 26px;
+
+      h1 {
+        color: $col-dark-blue;
+        font-family: $font-japanese;
+        line-height: 30px;
+      }
+    }
+
+    .product-price {
+      display: flex;
+      padding-bottom: 26px;
+
+      .price-text {
+        font-size: 20px;
+
+        .tax-text {
+          font-size: 12px;
+          padding: 0 5px;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    .product-simple-text {
+      padding-bottom: 35px;
+    }
+
+    .add-cart-content {
+      width: 241px;
+      height: 48px;
+      background-color: $col-green;
+      margin: 0 auto;
+      text-align: center;
+      box-shadow: 0 5px 10px 1px #a1a7c0;
+
+      .shopping-cart-btn {
+        display: flex;
+        justify-content: center;
+        width: inherit;
+        height: inherit;
+  
+        .shopping-cart-icon {
+          padding: 12px 0;
+          padding-right: 15px;
+        }
+  
+        .shopping-cart-btn-text {
+          color: $col-white;
+          font-family: $font-english;
+          font-size: 20px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+
+  .detail-link {
+    padding-top: 82px;
+    padding-bottom: 50px;
+
+    .detail-link-text {
+      font-size: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .product-infomation {
+    border-top: $col-dark-blue solid 1px;
+    padding-top: 46px;
+    padding-bottom: 16px;
+
+    h1 {
+      font-family: $font-english;
+      text-align: center;
+      font-size: 36px;
+    }
+
+    .product-infomation-text {
+      padding: 16px 0;
+    }
+  }
+
+  .product-toggle-contents {
+    font-size: 13px;
+    padding-bottom: 30px;
+
+    .toggle-btn {
+      border-top: $col-dark-blue solid 1px;
+      border-bottom: $col-dark-blue solid 1px;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    /** 召し上がり方 */
+    .product-toggle-text-contents {
+      padding: 0 10px;
+
+      .toggle-title {
+        list-style-position: inside;
+      }
+
+      .toggle-text {
+        margin-bottom: 5px;
+      }
+    }
+
+    /** 商品説明 */
+    .nutrition-facts-text {
+      padding-bottom: 25px;
+
+      &:not(:first-child) {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .products-list-link {
+    color: $col-dark-blue;
+    font-family: $font-english;
+    font-size: 15px;
+    width: 131px;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+    border-bottom: 2px solid $col-dark-blue;
+    position: relative;
+
+    /** 左矢印ボーダー */
+    &::before {
+      content: '';
+      width: 11.7px;
+      height: 12px;
+      position: absolute;
+      left: -5.8px;
+      bottom: 2px;
+      border-right: 2px solid $col-dark-blue;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: '';
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      width: 4px;
+      height: 4px;
+      position: absolute;
+      left: -1.8px;
+      bottom: -2px;
+      background-color: $col-dark-blue;
+    }
+  }
+}

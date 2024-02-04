@@ -1,0 +1,81 @@
+@import '../../../assets/scss/common';
+
+/**
+ * Products Item
+ */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 16px;
+
+  .product-item-content {
+    width: 189px;
+    height: 294px;
+
+    .product-item-image {
+      
+    }
+
+    .product-item-title {
+      height: 15px;
+      color: $col-dark-blue;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: $font-japanese;
+      margin: 8px 0;
+    }
+
+    .product-item-other {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        height: 26px;
+        text-align: right;
+        font-size: 20px;
+      }
+    }
+
+    .product-item-link {
+      margin-top: 12px;
+      text-align: right;
+      text-shadow: 0px 1px 1px rgba(20, 33, 90, 0.25);
+
+      .detail-link-btn {
+        color: $col-dark-blue;
+        font-family: $font-english;
+        font-size: 15px;
+        width: 131px;
+        margin-left: auto;
+        text-align: center;
+        
+        border-bottom: 2px solid $col-dark-blue;
+        position: relative;
+
+        /** 右矢印ボーダー */
+        &::before {
+          content: '';
+          width: 11.7px;
+          height: 12px;
+          position: absolute;
+          right: 1.8px;
+          bottom: -7.3px;
+          border-right: 2px solid $col-dark-blue;
+          transform: rotate(-45deg);
+        }
+
+        &::after {
+          content: '';
+          clip-path: polygon(1% 0, 100% 100%, 0 100%);
+          width: 2px;
+          height: 2px;
+          position: absolute;
+          right: -1.5px;
+          bottom: -2px;
+          background-color: $col-dark-blue;
+        }
+      }
+    }
+  }
+}

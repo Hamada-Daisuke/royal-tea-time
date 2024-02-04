@@ -1,0 +1,90 @@
+@import '../../../assets/scss/common';
+
+/**
+ * Header
+ */
+.header-contents {
+  width: 430px;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $col-dark-blue;
+
+  &-change-color {
+    background-color: $col-white;
+
+    #change-position {
+      padding-right: 200px;
+    }
+  }
+
+  .bland-logo-type {
+    padding: 12px 144px 0 10px;
+
+    .header-logo-link {
+      display: block;
+      height: 42px;
+    }
+  }
+
+  .person-icon {
+    margin-right: 19px;
+
+    .header-person-link {
+      display: block;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .navigation-menu {
+    margin-right: 20px;
+    width: 32px;
+    height: 29.2px;
+    position: relative;
+
+    .header-nav-link {
+      display: block;
+      width: 32px;
+      height: 29.2px;
+    }
+
+    .menu-line {
+      display: inline-block;
+      width: 32px;
+      height: 2.4px;
+      background-color: $col-white;
+      position: absolute;
+
+      &-dark-blue {
+        background-color: $col-dark-blue;
+      }
+      
+      &.nav-menu-line-01 {
+        top: 0;
+      }
+
+      &.nav-menu-line-02 {
+        top: 10px;
+      }
+    }
+
+    p {
+      width: 30.4px;
+      height: 11.2px;
+      color: $col-white;
+      font-family: $font-english;
+      font-size: 10px;
+      position: absolute;
+      bottom: 0;
+
+      &.change-color {
+        color: $col-dark-blue;
+      }
+    }
+  }
+}

@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
-import { CommonComponentModule } from '../common/common-component.module';
+import { PartsHeaderComponent } from '../common/parts-header/parts-header.component';
+import { PartsFooterComponent } from '../common/parts-footer/parts-footer.component';
+import { PartsBreadcrumbComponent } from '../common/parts-breadcrumb/parts-breadcrumb.component';
+import { PartsStickyCartBtnComponent } from '../common/parts-sticky-cart-btn/parts-sticky-cart-btn.component';
 
 @Component({
-  selector: 'app-top',
+  selector: 'royal-tea-time-top',
   standalone: true,
   templateUrl: './top.component.html',
   styleUrl: './top.component.scss',
-  imports: [CommonComponentModule]
+  imports: [
+    PartsHeaderComponent,
+    PartsFooterComponent,
+    PartsBreadcrumbComponent,
+    PartsStickyCartBtnComponent
+  ]
 })
 export class TopComponent {
   

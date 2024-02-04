@@ -34,7 +34,16 @@ export const routes: Routes = [
     // resolve: {
     //   data: AuthDataResolver
     // },
-    loadComponent: () => import('./auth/auth.component').then(mod => mod.AuthComponent)
+    children: [
+      {
+        path: 'login',
+        loadComponent: () => import('./auth/login/auth.component').then(mod => mod.AuthComponent)
+      },
+      {
+        path: 'sign-up',
+        loadComponent: () => import('./auth/sign-up/sign-up.component').then(mod => mod.SignUpComponent)
+      }
+    ]
   },
   {
     path: 'contact',

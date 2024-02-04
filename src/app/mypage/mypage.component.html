@@ -1,1 +1,140 @@
-<p>mypage works!</p>
+<royal-tea-time-parts-header></royal-tea-time-parts-header>
+
+<royal-tea-time-parts-cover-image
+  [img]="'../../../assets/images/mypage_cover.png'"
+></royal-tea-time-parts-cover-image>
+
+<royal-tea-time-parts-breadcrumb [breadcrumb]="'mypage'"></royal-tea-time-parts-breadcrumb>
+
+<section class="mypage-content-wrapper">
+  <h1>mypage</h1>
+  
+  <!-- アカウントコンテンツ -->
+  <section class="mypage-content">
+    <div
+      class="content-header"
+      (click)="
+        showAccountDisplay = !showAccountDisplay;
+      "
+    >
+      <p>アカウント情報</p>
+      <div class="control-btn-content">
+        <div
+          class="control-btn"
+          [ngClass]="showAccountDisplay ? 'up-arrow-btn' : 'down-arrow-btn'"
+        ></div>
+      </div>
+    </div>
+    <!-- [style.display]="showAccountDisplay ? 'block' : 'none'" -->
+    <div
+      id="account"
+      class="content-body"
+      [@switch]="showAccountDisplay ? 'open' : 'close'"
+    >
+      <ul class="content-item">
+        <li class="account-items">ユーザー名：ロイヤルティータイム</li>
+        <li class="account-items">Eメール：royal_tea_time&#64;mail.com</li>
+        <li class="account-items">電話番号：123-4567-8910</li>
+      </ul>
+      <div class="content-btn">
+        <p class="edit-btn">アカウント情報更新</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- お気に入りコンテンツ -->
+  <section class="mypage-content">
+    <div class="content-header" (click)="showFavoriteDisplay = !showFavoriteDisplay">
+      <p>お気に入り</p>
+      <div class="control-btn-content">
+        <div class="control-btn" [ngClass]="showFavoriteDisplay ? 'up-arrow-btn' : 'down-arrow-btn'"
+        ></div>
+      </div>
+    </div>
+    <div class="content-body product-body">
+      <ul
+        class="content-item"
+        [style.display]="showFavoriteDisplay ? 'block' : 'none'"
+        @switch
+      >
+        <li class="product-items">
+          <img src="../../assets/images/product_item_main.png" width="72px" height="72px" alt="商品画像">
+          <div class="product-text">
+            <p>アールグレイ</p>
+            <p>2,000円</p>
+          </div>
+          <img class="icon-image" src="../../assets/images/shopping_cart_dark_blue_icon.svg" width="20px" height="24px" alt="shopping_cart_icon画像">
+          <img class="icon-image" src="../../../assets/images/favorite.svg" width="30px" height="29px" alt="favorite画像">
+        </li>
+        <li class="product-items">
+          <img src="../../assets/images/product_item_main.png" width="72px" height="72px" alt="商品画像">
+          <div class="product-text">
+            <p>ルイボスティー</p>
+            <p>2,000円</p>
+          </div>
+          <img class="icon-image" src="../../assets/images/shopping_cart_dark_blue_icon.svg" width="20px" height="24px" alt="shopping_cart_icon画像">
+          <img class="icon-image" src="../../../assets/images/favorite.svg" width="30px" height="29px" alt="favorite画像">
+        </li>
+        <li class="product-items">
+          <img src="../../assets/images/product_item_main.png" width="72px" height="72px" alt="商品画像">
+          <div class="product-text">
+            <p>ダージリン</p>
+            <p>2,000円</p>
+          </div>
+          <img class="icon-image" src="../../assets/images/shopping_cart_dark_blue_icon.svg" width="20px" height="24px" alt="shopping_cart_icon画像">
+          <img class="icon-image" src="../../../assets/images/favorite.svg" width="30px" height="29px" alt="favorite画像">
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- 購入履歴コンテンツ -->
+  <section class="mypage-content">
+    <div class="content-header" (click)="showHistoryDisplay = !showHistoryDisplay">
+      <p>購入履歴</p>
+      <div class="control-btn-content">
+        <div class="control-btn" [ngClass]="showHistoryDisplay ? 'up-arrow-btn' : 'down-arrow-btn'"></div>
+      </div>
+    </div>
+    <div
+      class="content-body product-body"
+      [style.display]="showHistoryDisplay ? 'block' : 'none'"
+      @switch
+    >
+      <ul class="content-item">
+        <li class="product-items">
+          <img src="../../assets/images/product_item_main.png" width="72px" height="72px" alt="商品画像">
+          <div class="product-text">
+            <p>アールグレイ</p>
+            <p>2,000円</p>
+          </div>
+          <img class="icon-image" src="../../assets/images/shopping_cart_dark_blue_icon.svg" width="20px" height="24px" alt="shopping_cart_icon画像">
+        </li>
+        <li class="product-items">
+          <img src="../../assets/images/product_item_main.png" width="72px" height="72px" alt="商品画像">
+          <div class="product-text">
+            <p>ルイボスティー</p>
+            <p>2,000円</p>
+          </div>
+          <img class="icon-image" src="../../assets/images/shopping_cart_dark_blue_icon.svg" width="20px" height="24px" alt="shopping_cart_icon画像">
+        </li>
+        <li class="product-items">
+          <img src="../../assets/images/product_item_main.png" width="72px" height="72px" alt="商品画像">
+          <div class="product-text">
+            <p>ダージリン</p>
+            <p>2,000円</p>
+          </div>
+          <img class="icon-image" src="../../assets/images/shopping_cart_dark_blue_icon.svg" width="20px" height="24px" alt="shopping_cart_icon画像">
+        </li>
+      </ul>
+      <!-- <div class="all-add-btn"> -->
+      <div class="content-btn all-add">
+        <img class="shopping-cart-icon" src="../../assets/images/shopping_cart_icon.svg" width="20px" height="24px" alt="shopping_cart_icon画像">
+        <p class="all-btn-text">すべてカートに入れる</p>
+      </div>
+    </div>
+  </section>
+  
+</section>
+
+<royal-tea-time-parts-footer></royal-tea-time-parts-footer>
