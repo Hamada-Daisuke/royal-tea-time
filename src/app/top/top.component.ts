@@ -3,6 +3,7 @@ import { PartsHeaderComponent } from '../common/parts-header/parts-header.compon
 import { PartsFooterComponent } from '../common/parts-footer/parts-footer.component';
 import { PartsBreadcrumbComponent } from '../common/parts-breadcrumb/parts-breadcrumb.component';
 import { PartsStickyCartBtnComponent } from '../common/parts-sticky-cart-btn/parts-sticky-cart-btn.component';
+import { PartsNewsModule } from '../common/parts-news/parts-news.module';
 
 @Component({
   selector: 'royal-tea-time-top',
@@ -13,7 +14,8 @@ import { PartsStickyCartBtnComponent } from '../common/parts-sticky-cart-btn/par
     PartsHeaderComponent,
     PartsFooterComponent,
     PartsBreadcrumbComponent,
-    PartsStickyCartBtnComponent
+    PartsStickyCartBtnComponent,
+    PartsNewsModule
   ]
 })
 export class TopComponent {

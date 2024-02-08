@@ -1,0 +1,90 @@
+@import '../../../assets/scss/common';
+
+/**
+ * News
+ */
+.news-content-wrapper {
+
+  h1 {
+    font-family: $font-english;
+    font-size: 30px;
+    color: $col-dark-blue;
+    margin: 0 20px;
+  }
+
+  swiper-container {
+    width: 100%;
+    height: 150px;
+
+    swiper-slide {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      content: "";
+    }
+  }
+
+  .product-item-link {
+    margin-right: 20px;
+    text-align: right;
+    text-shadow: 0px 1px 1px rgba(20, 33, 90, 0.25);
+
+    .detail-link-btn {
+      color: $col-dark-blue;
+      font-family: $font-english;
+      font-size: 15px;
+      width: 131px;
+      margin-left: auto;
+      text-align: center;
+      
+      border-bottom: 2px solid $col-dark-blue;
+      position: relative;
+
+      /** 右矢印ボーダー */
+      &::before {
+        content: '';
+        width: 11.7px;
+        height: 12px;
+        position: absolute;
+        right: 1.8px;
+        bottom: -7.3px;
+        border-right: 2px solid $col-dark-blue;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        content: '';
+        clip-path: polygon(1% 0, 100% 100%, 0 100%);
+        width: 2px;
+        height: 2px;
+        position: absolute;
+        right: -1.5px;
+        bottom: -2px;
+        background-color: $col-dark-blue;
+      }
+    }
+  }
+}
+
+// .swiper-button-prev,
+// .swiper-button-next {
+//   content: "";
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   background-image: none;
+//   background-size: 27px 44px;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   border-left: 25px solid #FFFFFF;
+//   border-top: 25px solid transparent;
+//   border-bottom: 25px solid transparent;
+// }

@@ -56,7 +56,7 @@
     .menu-line {
       display: inline-block;
       width: 32px;
-      height: 2.4px;
+      height: 3px;
       background-color: $col-white;
       position: absolute;
 
@@ -69,6 +69,7 @@
         transition: transform 0.3s ease-out;
 
         &-change-position {
+          height: 3px;
           width: 28px;
           transform: translate(2px, 8px) rotate(45deg);
           transition: transform 0.3s ease-out;
@@ -80,6 +81,7 @@
         transition: transform 0.3s ease-out;
 
         &-change-position {
+          height: 3px;
           width: 28px;
           transform: translate(2px, -2px) rotate(-45deg);
           transition: transform 0.3s ease-out;
